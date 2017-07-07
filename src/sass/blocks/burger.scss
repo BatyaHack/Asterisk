@@ -1,0 +1,38 @@
+.burger {
+  position: absolute;
+  top: 23px;
+  right: 32px;
+
+  display: block;
+  width: 18px;
+  height: 14px;
+  padding: 0;
+
+  font-size: 0;
+
+  opacity: 1;
+  background: none;
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+
+  &--open {
+    display: block;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      display: block;
+      width: 18px;
+      height: 3px;
+
+      background-color: $burger-bg-color;
+      box-shadow: 0 -6px 0 $burger-bg-color,
+                  0 6px 0 $burger-bg-color;
+    }
+  }
+}

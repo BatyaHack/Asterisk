@@ -1,0 +1,57 @@
+            /*device style text*/
+@mixin tablet-primary-text-style {
+  font-family: $primary-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: $tablet-primary-size-text;
+  line-height: $tablet-primary-line-height-text;
+  color: $primary-font-color;
+}
+
+@mixin desktop-primary-text-style {
+  font-family: $primary-font-family;
+  font-style: normal;
+  font-size: $desktop-primary-size-text;
+  line-height: $desktop-primary-line-height-text;
+  color: $primary-font-color;
+}
+
+            /*device style title*/
+@mixin tablet-primary-title-style {
+  font-family: $primary-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: $tablet-primary-size-title;
+  line-height: $tablet-primary-line-height-title;
+  color: $secondary-font-color;
+}
+
+@mixin desktop-primary-title-style {
+  font-family: $primary-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: $desktop-primary-size-title;
+  line-height: $desktop-primary-line-height-title;
+  color: $secondary-font-color;
+}
+
+@mixin set-icon ($path, $w, $h) {
+    content: "";
+    position: absolute;
+    display: block;
+    width: $w;
+    height: $h;
+    background: $path;    
+}
+
+            /*hover-active effects*/
+@mixin primary-hover-active-effects {
+  transition-duration: 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}

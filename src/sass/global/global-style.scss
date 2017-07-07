@@ -1,0 +1,12 @@
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-width: $width-tablet-device;
+  max-width: 800px;
+  margin: 0 auto;
+
+  @include tablet-primary-text-style;
+}

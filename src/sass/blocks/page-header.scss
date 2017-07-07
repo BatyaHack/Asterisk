@@ -1,0 +1,21 @@
+.page-header__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: $width-tablet-device;
+  padding: 14px 10px;
+  padding-bottom: 12px;
+
+  background-color: $secondary-bg-color;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.page-header__text {
+  width: 250px;
+  margin: 0;
+
+  font-style: italic;
+  font-size: 13px;
+  line-height: 13px;
+  color: #ffffff;
+}
